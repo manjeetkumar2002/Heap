@@ -45,7 +45,7 @@ void BuildHeapStepDown(int arr[],int n){
         
     }
 }
-
+// heapsort for sorting a array
 void heapSort(int arr[],int n){
     //step1 : build the max heap
     BuildHeapStepDown(arr,n);
@@ -88,9 +88,13 @@ int main(){
     
     // BuildHeapSetupUp(arr,n);
     // BuildHeapStepDown(arr,n);
-
-    heapSort(arr,n);
     cout<<"Max Heap : ";
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+    heapSort(arr,n);
+    cout<<"Sorted Array : ";
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
